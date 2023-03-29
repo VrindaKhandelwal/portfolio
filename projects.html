@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra:wght@600&family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    @media only screen and (max-width: 600px) {
+      #p-width {
+        width: 100%;
+      }
+
+      #nav-flex {
+        justify-content: space-evenly;
+        width: 100%;
+      }
+
+      #nav-flex a {
+        margin: 0 !important;
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+      #p-width {
+        width: 500px;
+      }
+
+      #nav-flex {
+        justify-content: end;
+        width: 100%;
+      }
+    }
+
+    body {
+      background: url("uwu3.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    li{
+        list-style-type: square;
+    }
+  </style>
+  <body>
+    <nav
+      class="fixed top-0 left-0 right-0 w-full h-[60px] flex items-center bg-slate-500 px-4"
+      style="z-index: 200"
+      id="nav-flex"
+    >
+      <a href="./index.html" class="text-white text-lg font-bold mr-4">Home</a>
+      <a href="./projects.html" class="text-white text-lg font-bold mr-4"
+        >Projects</a
+      >
+      <a href="./resume.html" class="text-white text-lg font-bold mr-4"
+        >Resume</a
+      >
+      <a href="./contact.html" class="text-white text-lg font-bold mr-4"
+        >Contact</a
+      >
+    </nav>
+    <div
+      class="absolute flex justify-center items-center top-0 bottom-0 left-0 right-0 w-full h-100% p-4 mt-48"
+      id="projects"
+      
+    >
+      <div
+        class="flex flex-col justify-center items-center p-8 bg-[#000000CC] text-white rounded-lg drop-shadow-lg mb-48"
+      >
+        <h1 style="font-family: 'Alkatra', cursive" class="text-5xl">
+            Projects
+        </h1>
+        <br />
+        <div style="max-width:1024px" >
+            
+            <h1 style="font-family: 'Alkatra', cursive;border-bottom:1px solid white" class="text-3xl mb-4">
+                Instagram Music, Product Management
+            </h1>
+            <ul style="font-family: 'Kanit', cursive">
+                <li>Worked as a student coordinator on the development of Instagram music, an app which features content-creation, streaming, distribution and monetization tools for emerging musicians and leverages Instagram’s massive user base </li>
+                <li>Defined product vision and created product roadmap, market requirements document outlining opportunity, threats, product differentiation, customer challenges, risks, personas and market estimation</li>
+                <li>Conducted market research to identify user preferences and trends in audio editing and sharing and music discovery</li>
+                <li>Developed and implemented product launch strategies, including product messaging, pricing, and promotion, to ensure successful product adoption</li>
+            </ul>
+            <br />
+            <br />
+            <h1 style="font-family: 'Alkatra', cursive;border-bottom:1px solid white" class="text-3xl mb-4">
+                ArtForAll, UX Research
+            </h1>
+            <ul style="font-family: 'Kanit', cursive">
+                <li>Interviewed 50+ students art enthusiasts to understand their motivations, mental models and user journeys </li>
+                <li>Conducted point of view analysis and designed personas, affinity diagrams, user journey maps to better empathize with users </li>
+                <li>Participated in the development of user experience strategy and vision for a product that created open access art spaces</li>
+            </ul>
+            <br />
+            <br />
+            <h1 style="font-family: 'Alkatra', cursive;border-bottom:1px solid white" class="text-3xl mb-4">
+                Ashoka Centre for Wellbeing App, Product Development
+            </h1>
+            <ul style="font-family: 'Kanit', cursive">
+                <li>Conducted market research to identify user needs and preferences in the mental health domain and interviewed 70+ college students </li>
+                <li>Headed the creation of mental health management platform, worked closely with engineers and designers to develop and launch new features like book priority appointments, rate counselors, etc.</li>
+                <li>Conducted user testing and feedback sessions to gather insights and feedback from users, and iterated on product design and functionality based on user needs and preferences.</li>
+                <li>New features boosted the number of booked appointments by 40% within 2 months</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
